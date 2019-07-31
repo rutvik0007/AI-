@@ -1,0 +1,16 @@
+x=input().split(',')
+d=[]
+for a in x:
+    d.append(int(a)) 
+Q=[]    
+c=50
+h=30
+for no in d:
+    q=(2*c*no)/h
+    f=int(q**(1/2))
+    Q.append(str(f))
+print(','.join(Q))
+    
+    
+    
+    

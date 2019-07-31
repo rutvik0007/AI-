@@ -1,0 +1,48 @@
+class practice:
+    def formula(self):
+        x=input().split(',')
+        d=[]
+        for a in x:
+            d.append(int(a)) 
+        Q=[]    
+        c=50
+        h=30
+        for no in d:
+            q=(2*c*no)/h
+            f=int(q**(1/2))
+            Q.append(str(f))
+        print(','.join(Q))
+    
+    def matrix(self):
+        row_num = int(input("Input number of rows: "))
+        col_num = int(input("Input number of columns: "))
+        multi_list=[] 
+        for row in range(row_num):
+            a=[] 
+            for col in range(col_num):
+                a.append(col*row)
+            multi_list.append(a)
+        print(multi_list)
+    
+    def reverse(self):
+        words=input().split(',')
+        words.sort()
+        print(','.join(words))
+    
+    def freq(self):
+        strng=input()
+        lst=strng.split()
+        lst.sort()
+
+        wordfreq=[]
+        for words in lst:
+            wordfreq.append(lst.count(words))
+    
+        print(dict(zip(lst,wordfreq)))
+ 
+prac=practice()
+
+prac.freq()
+    
+    
+        

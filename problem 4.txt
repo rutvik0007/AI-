@@ -1,0 +1,9 @@
+strng=input()
+lst=strng.split()
+lst.sort()
+
+wordfreq=[]
+for words in lst:
+    wordfreq.append(lst.count(words))
+    
+print(dict(zip(lst,wordfreq)))

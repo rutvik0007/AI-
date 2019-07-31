@@ -1,0 +1,11 @@
+row_num = int(input("Input number of rows: "))
+col_num = int(input("Input number of columns: "))
+multi_list=[] 
+for row in range(row_num):
+    a=[] 
+    for col in range(col_num):
+        a.append(col*row)
+    multi_list.append(a)
+        
+
+print(multi_list)
